@@ -1,0 +1,58 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+h1{
+    color: blue;
+}
+p{
+    color: brown;
+}
+
+.flex-container{
+    margin-top: 12px;
+    height: 18rem;
+    width: 70%;
+    border: 2px solid black;
+/* we use display flex property to make a container flex and by default flex direction in row.  */
+    display: flex;
+/* ceneter a elements vertically use align item center property */
+    align-items: center;  
+    /* justify content can center the element horizontally centered if flex direction row */
+    justify-content: center;
+    /* these above three line indicate that inside of div container boxes are centered horizontally and vertically.
+    Flexbox is easier htan float and other layout properties.
+    */
+}
+
+.box{
+    height: 4rem;
+    width: 5rem;
+    border: 2px solid blue;
+    margin: 12px;
+
+
+}
+
+.flexed{
+    margin-top: 12px;
+    height: 18rem;
+    width: 70%;
+    border: 2px solid black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+    
+}
+
+.boxs{
+    height: 4rem;
+    width: 5rem;
+    border: 2px solid blue;
+    margin: 12px;
+}

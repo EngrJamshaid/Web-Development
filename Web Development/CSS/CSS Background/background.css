@@ -1,0 +1,14 @@
+body{
+    /* if i want to change the background color of a webpage than use below background property. */
+    background-color: cadetblue;
+    color: aliceblue;
+}
+.back-image{
+    height: 400px;
+    width: 400px;
+    border: 2px solid black;
+    background-image: url("background.jpeg");
+    background-position: cover;
+    background-repeat: no-repeat;
+    background-size: cover;
+}

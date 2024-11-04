@@ -1,0 +1,38 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+
+.toprow{
+    background-color: cadetblue;
+}
+
+h1{
+    color: white;
+   
+}
+
+.box{
+/* height: 300px; */
+background-color: bisque;
+/* border: 1px solid red; */
+}
+
+
+@media screen and (max-width: 500px) {
+    h1, h4{
+        text-align:center;
+    }
+    /* body{
+        background-color: black;
+    } */
+}
+@media screen and (min-width: 500px) {
+  
+    body{
+        background-color: rgb(111, 168, 109);
+    }
+}

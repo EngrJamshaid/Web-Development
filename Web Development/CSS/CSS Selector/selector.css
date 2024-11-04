@@ -1,0 +1,23 @@
+/* simple selector=>id,class and tag name. */
+/* one more thing the id start with #symbole, class start with dot . symbol and tag stat with tagname. */
+
+#myid{   
+    color: blue;
+}
+
+
+.box{
+    border: 2px solid black;
+    height: 200px;
+    width: 50%;
+    /* comment is written like this in css and it is use to increse the readablity of a code which help easy to understand the code. */
+    padding: 12px;
+}
+
+span{
+    color: brown;
+    border: 2px solid blue;
+ 
+}
+
+/* these three are main selectors in css and mostly used  other 4 selectors are performs in next topics and also we notify when used.*/

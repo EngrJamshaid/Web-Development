@@ -1,0 +1,82 @@
+/* here we use universal selector to select all the things in a web page */
+*{
+    /* the purpose of using padding and margin 0% is that browser use/add some extra margin and padding */
+padding: 0%;
+margin: 0%;
+box-sizing: border-box;
+font-family: sans-serif;
+}
+p{
+    color: blue;
+}
+
+.hovme{
+    background-color: brown;
+    color: white;
+    display: inline-block;
+    padding: 12px;
+    box-sizing: border-box;
+    border-radius: 12px;
+    margin-left: 12px;
+}
+
+.hovme:hover{
+    /* when user hover and take cursor on it than background color will be changed */
+    background-color: blueviolet;
+    transition: all 1s ease-in;
+    cursor: pointer;
+}
+
+.box1{
+    background-color: black;
+    color: white;
+    height: 150px;
+    width: 100px;
+    margin: 130px;
+}
+
+.box1:hover{
+/* transform: scaleX(2); */
+/* transform: scaleY(2); */
+/* transform: rotate(90deg); */
+transform: translateX(200px);
+transition: all 1s;
+    cursor: pointer;
+}
+
+.animate{
+    border: 8px solid blue;
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* animation: animation 1s infinite; */
+
+}
+.inner{
+   border-top:8px solid red ;
+   border-bottom: 8px solid white;
+
+    height: 200px;
+    width: 200px;
+    border-radius: 50%; 
+    animation: animation 1s infinite;
+}
+
+@keyframes animation{
+    0%{
+        transform: rotate(45deg);
+    }
+    35%{
+        transform: rotate(90deg);
+    }
+    65%{
+        transform: rotate(180deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+
+}

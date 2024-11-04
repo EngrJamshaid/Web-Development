@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS margin And padding.</title>
+    <style>
+.box{
+    height: 400px;
+    width: 500px;
+    border: 2px solid black;
+    
+    /* padding-top: 22px;
+    padding-left: 34px;
+    padding-bottom: 45px;
+    padding-right: 33px; */
+
+    /* short hand property is padding: top right bottom left; */
+    padding: 12px 12px 23px 38px;
+    /* margin property is similar to pading property  */
+    margin: 23px 45px;
+    /* 23px margin is set topbottom and 45px is set left right. */
+}
+
+.innerbox{
+    height: 200px;
+    width: 200px;
+    border: 2px solid black;
+}
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div class="innerbox">this is a inner-box</div>
+    </div>
+</body>
+</html>
