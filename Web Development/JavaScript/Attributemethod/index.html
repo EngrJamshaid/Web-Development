@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attribute Methods</title>
+</head>
+<body>
+    <input type="text" name="myname" id="jmd" placeholder="Enter a Name">
+
+    <p class="mypara">this is a paragraph.</p>
+
+    <script>
+        let attr=document.getElementById('jmd');
+       console.log( attr.getAttribute);
+       console.log( attr.getAttribute('placeholder'));
+       attr.setAttribute('class',"user");
+       console.log(attr);
+       console.log(attr.hasAttribute('value'));
+
+    //    add or delete class
+    let myclass=document.querySelector('.mypara');
+    myclass.classList.add('new','new2');
+    console.log(myclass);
+
+    myclass.classList.toggle('jmd');
+    console.log(myclass);
+    // it can check jmd class is avilable or present or not if present than remove it if not present than add the class
+    
+    
+       
+       
+       
+    </script>
+</body>
+</html>

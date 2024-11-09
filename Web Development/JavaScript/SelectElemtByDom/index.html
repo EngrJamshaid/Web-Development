@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Select Element using Dom</title>
+</head>
+<body>
+    <!-- Dom is a document object model that is use to select the html element  -->
+     <!-- There are different ways to add or witte javaScript in html we can write inside head tage and link external javascript file also best technique is write javaScript befor body tag end -->
+      <h1 id="heading">This is javaScript</h1><br>
+name?<input type="text" name="myname" id="">
+<br><br>
+<p>this is a paragraph.</p>
+<div class="box">This is a div container.</div>
+
+<br><br>
+<span class="myspan">this is a span tag.</span>
+<h1 class="redd">this is heading 1</h1>
+<h1 class="redd">this is heading 1</h1>
+<h1 class="redd">this is heading 1</h1>
+
+
+     <script>
+        // getElementById()
+let jmd=document.getElementById('heading');
+jmd.style.backgroundColor='red';
+
+// getElemtnByName()
+let bymane=document.getElementsByName('myname');
+bymane[0].style.color='blue';
+
+// getElemtnByTagName()
+let para=document.getElementsByTagName('p');
+para[0].style.color='blue';
+
+// getElemtnByClassName()
+let box=document.getElementsByClassName('box');
+box[0].style.color='white';
+box[0].style.height='200px';
+box[0].style.width='200px';
+box[0].style.backgroundColor='blue';
+
+// query selector
+// for class use . and for  id use #
+let myspan=document.querySelector('.myspan').style.color='red';
+// querySelector all
+document.querySelectorAll('.redd')[1].style.backgroundColor='gray';
+document.querySelectorAll('.redd')[0].style.backgroundColor='purple';
+document.querySelectorAll('.redd')[2].style.backgroundColor='green';
+
+     </script>
+</body>
+</html>

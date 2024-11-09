@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Traversing Element using Dom</title>
+</head>
+<body>
+    <!--Traversing Element using Dom  -->
+
+
+    <div class="parent">
+<h1 >this is first child</h1>
+<h1 id="jmd">this is second child</h1>
+<h1>this is third child</h1>
+    </div>
+
+
+    <script>
+let parent=document.querySelector('.parent');
+let jmd=document.getElementById('jmd');
+console.log(parent.firstElementChild);
+console.log(parent.childNodes);
+
+console.log(jmd.nextElementSibling);
+console.log(jmd.previousElementSibling);
+
+
+
+
+    </script>
+</body>
+</html>

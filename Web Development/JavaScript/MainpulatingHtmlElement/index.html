@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mainpulating Html element.</title>
+    <style>
+        .myclass{
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+    <h1>Mainipulating HTML Element.</h1>
+<div class="box">
+    <p id="para">This is a  paragraph.</p>
+</div>
+
+
+<ul class="menu">
+    <li>Home</li>
+    <li>About</li>
+    <li>Services</li>
+    <li>Gallery</li>
+</ul>
+    <script>
+        // create and appendchild element 
+        let create=document.createElement('div');
+        create.innerHTML="<h2>this is heading 2 </h2>";
+        create.className='myclass';
+        console.log(create);
+        // in above technique div is created and h2 is inside div is created class name of div is 'myclass is applyin div the problem is that it cannot shown in webpage when it is created. than fix the problem by append child '
+        document.body.appendChild(create);
+
+        // Menu.contextContent
+        let para=document.getElementById('para');
+        console.log(para.textContent);
+        console.log(para.innerText);
+
+        // the difference between textContent and innertext is that if element style as display none than innerText show the element but text content not show the element it can show only visible text if use textcontent it can override the elements
+        
+
+
+        // insertAdjecentHTML
+        let menu=document.querySelector('.menu');
+        menu.insertAdjacentHTML('afterbegin',"<li>Contact US</li>");
+// the position name will be change by afterbegin, beforebegin,beforeend,afterend
+        
+    </script>
+</body>
+</html>

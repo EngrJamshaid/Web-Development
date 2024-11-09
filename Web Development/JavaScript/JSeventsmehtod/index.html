@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events in HTML</title>
+    <style>
+        .box{
+            height: 200px;
+            width: 200px;
+        }
+    </style>
+</head>
+<body>
+<div class="box">
+<h2 id="heading">This is heading 2</h2>
+<button id="btn">click me</button>
+</div>
+<button onclick="runfunction()">click me</button>
+
+===============================
+<p id="para">this is paragraph.</p>
+<button id="mybtn">AddEventListner</button>
+
+
+    <script>
+function runfunction()
+{
+    let box=document.querySelector('.box');
+    console.log(box);
+    
+    box.style.backgroundColor='red';
+}
+
+let heading=document.getElementById('heading');
+let btn=document.getElementById('btn');
+btn.onclick=function()
+{
+    console.log("button clicked");
+    heading.style.color='blue';
+    
+}
+
+// add EventListner Method
+let mybtn=document.getElementById('mybtn');
+let mypara=document.getElementById('para');
+
+mybtn.addEventListener('click', ()=>{
+mypara.style.backgroundColor='red';
+mypara.style.color='white';
+});
+
+
+    </script>
+</body>
+</html>
