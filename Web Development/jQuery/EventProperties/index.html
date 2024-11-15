@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Properties</title>
+<style>
+    .box{
+        background-color: brown;
+        color: white;
+        padding: 12px;
+        font-family: sans-serif;
+    }
+</style>
+</head>
+<body>
+    <h1>Animaitons  in jQuery</h1>
+    <div class="box" style="border: 2px solid black; height: 200px;
+    width: 300px;">
+<h2 id="mytext">This is heading.</h2>
+<p class="para mypara"></p>
+<p class="para2 "></p>
+<p class="para3 "></p>
+<p class="para4 "></p>
+    </div>
+    <br><br>
+    <a href="http://google.com" id="prevent">Google</a>
+
+    <script src="/jqueryFile/jquery.js"></script>
+    <script>
+        $(document).ready(function()
+    {
+
+
+$(document).mousemove(function(event)
+{
+$('.para').text("page X is "+ event.pageX+" Page Y is "+event.pageY);
+})
+
+//  event type
+$('.box').on('click dblclick mouseout mouseover',function()
+{
+    $('.para2').html('event type is= '+ event.type);
+})
+// event which
+$('.box').on('click dblclick mouseout mouseover',function()
+{
+    $('.para3').html('event which is= '+ event.which);
+})
+// event target proerty
+$('.box').on('click',function()
+{
+    $('.para4').html('event target is= '+ event.target.nodeName);
+})
+
+
+// prevent default property in j-query it is used when byDefault functionality of a particular element is off
+$('#prevent').click(function()
+{
+event.preventDefault();
+});
+
+
+    });
+    </script>
+</body>
+</html>

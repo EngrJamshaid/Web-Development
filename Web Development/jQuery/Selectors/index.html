@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selctors</title>
+</head>
+<body>
+    <h1>Selectors in jQuery</h1>
+    <p class="para">this is a paragraph it can select by class</p>
+    <p id="mypara">this is a another paragraph. it can select by using id</p>
+    <div>this is a another paragraph. it can select by using tagname</div>
+    <script src="/jqueryFile/jquery.js"></script>
+<script>
+    $(document).ready(function(){
+// Selcetors in jQuery by class name
+let a=$('.para');
+a.css('color','red');
+// Selcetors in jQuery by id
+let b=$('#mypara');
+b.css('background-color','red');
+b.css('color','white');
+// Selcetors in jQuery by tag name
+let c=$('div');
+c.css('color','blue');
+
+
+// there are many selector that are select the Dom Element we discuss in further .
+    });
+</script>
+</body>
+</html>

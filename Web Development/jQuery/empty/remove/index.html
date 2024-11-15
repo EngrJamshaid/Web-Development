@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>empty or remove</title>
+</head>
+<body>
+    <h1>empty/remove Method in jQuery</h1>
+    <div class="box" style="border: 2px solid black; height: 200px;
+    width: 300px;">
+<h2 id="mytext">this is heading.</h2>
+<p class="para mypara">empty remove is similar to css display none or visibilty hidden. </p>
+    </div>
+
+    <div class="clo" style="border: 2px solid blue; height: 200px;
+    width: 200px;">
+
+    </div>
+    <button class="btn1">empty</button>
+    <button class="btn2">remove</button>
+    <button class="cbtn1">clone</button>
+    <button class="rbtn1">replace with</button>
+   
+    <script src="/jqueryFile/jquery.js"></script>
+    <script>
+        $(document).ready(function()
+    {
+        $('.btn1').click(function()
+    {
+$('.box').empty();
+    });
+        $('.btn2').click(function()
+    {
+$('.box').remove();
+    });
+
+
+    $('.cbtn1').click(function()
+{
+    $('.box h2').clone().prependTo('.clo');
+})
+
+
+// replace with
+$('.rbtn1').click(function()
+{
+    $('#mytext').replaceWith('<h1>my name is jamshaid</h1>')
+
+});
+    })
+    </script>
+</body>
+</html>

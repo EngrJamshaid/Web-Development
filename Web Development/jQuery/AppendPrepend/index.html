@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Append/Prepend</title>
+</head>
+<body>
+    <h1>on/off Method in jQuery</h1>
+    <div class="box" style="border: 2px solid black; height: 200px;
+    width: 300px;">
+<h2 id="mytext">this is heading.</h2>
+<p class="para mypara">the difference between append, prepend is that append add the element inside of active or target element while after, before add or insert hte element outside of the target elemtnt. </p>
+    </div>
+    <button class="btn1">Append</button>
+    <button class="btn2">Prepend</button>
+    <button class="abtn1">after</button>
+    <button class="abtn2">before</button>
+    <script src="/jqueryFile/jquery.js"></script>
+    <script>
+        $(document).ready(function()
+    {
+$('.btn1').click(function()
+{
+    $('.box').append('<h3>This is append</h3>');
+
+});
+$('.btn2').click(function()
+{
+    $('.box').prepend('<h3>This is prepend</h3>');
+
+});
+$('.abtn1').click(function()
+{
+    $('.box').after('<h3>This is after</h3>');
+
+});
+$('.abtn2').click(function()
+{
+    $('.box').before('<h3>This is before</h3>');
+
+});
+    });
+    </script>
+</body>
+</html>

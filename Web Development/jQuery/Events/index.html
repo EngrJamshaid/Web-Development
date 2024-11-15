@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selctors</title>
+</head>
+<body>
+    <h1>Events in jQuery</h1>
+    <div class="box"><p id="para" style="color: black;">click on paragraph change the body color to blue</p></div>
+    <div class="box1" style="height: 200px; width: 200px; border: 2px solid black;">Mouse enter in div</div>
+<br><br>
+    <form action="">
+        <label for="one">Name:</label>
+        <input type="text" name="" id="one">
+<br><br>
+        <input type="submit" value="Submit">
+    </form>
+
+    <script src="/jqueryFile/jquery.js"></script>
+<script>
+    $(document).ready(function(){
+let a=$('.box');
+a.click(function(){
+    $('#para').css('background-color','blue');
+})
+// mouse event
+let b=$('.box1');
+b.mouseenter(function(){
+    $(this).css('background-color','red');
+})
+
+// keybord events are keypress, keyup, keydown etc
+$('body').keypress(function()
+{
+    $(this).css('background-color','green');
+});
+
+
+// form events in j query focus,onsubmit etc.
+$('#one').focus(function()
+{
+    $(this).css('background-color','red');
+})
+
+
+// windows events a resize,scroll and load etc
+    });
+</script>
+</body>
+</html>

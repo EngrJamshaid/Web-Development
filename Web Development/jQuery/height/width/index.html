@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>height/width</title>
+</head>
+<body>
+
+
+<div class="box" style="border: 3px solid blue; height: 200px; width: 220px; text-align: center; padding: 12px;">
+    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corporis, reprehenderit et. Assumenda ea perferendis repudiandae corporis architecto distinctio voluptatem nesciunt tempora iste.
+    <p class="para" style="border: 1px solid blue;">the</p>
+</div>
+<br><br>
+<button class="btn1">Height</button>
+<button class="btn2">innerHeight</button>
+<button class="btn3">outerHeigh</button>
+<button class="btn4">width</button>
+<button class="btn5">innerWidth</button>
+<button class="btn6">outerWidth</button>
+<button class="myclass not">check class </button>
+
+   
+   
+   
+
+   <script src="/jqueryFile/jquery.js"></script>
+   <script>
+    $(document).ready(function()
+{
+
+$('.btn1').click(function()
+{
+    var a=$('.box').height();
+    // console.log(a);
+    
+    $('.para').html(a);
+});
+$('.btn2').click(function()
+{
+    var a=$('.box').innerHeight();
+    // console.log(a);
+    
+    $('.para').html(a);
+});
+$('.btn3').click(function()
+{
+    var a=$('.box').outerHeight();
+    // console.log(a);
+    
+    $('.para').html(a);
+});
+
+
+// width 
+
+
+$('.btn4').click(function()
+{
+    var a=$('.box').width();
+    // console.log(a);
+    
+    $('.para').html(a);
+});
+$('.btn5').click(function()
+{
+    var a=$('.box').innerWidth();
+    // console.log(a);
+    
+    $('.para').html(a);
+});
+$('.btn6').click(function()
+{
+    var a=$('.box').outerWidth();
+    // console.log(a);
+    
+    $('.para').html(a);
+});
+
+
+// check has a class or not 
+$('.not').click(function()
+{
+    let jmd=$('.box').hasClass('.myclass');
+    console.log(jmd);
+    
+})
+
+
+
+});
+   </script>
+</body>
+</html>

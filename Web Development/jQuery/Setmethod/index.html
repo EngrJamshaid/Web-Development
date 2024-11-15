@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>set Methods</title>
+    <style>
+        .myclass{
+            color: rebeccapurple;
+        }
+    </style>
+</head>
+<body>
+    <h1>Set Method in j-Query</h1>
+    <div class="box" style="border: 2px solid black; height: 200px;
+    width: 300px;">
+<h2 id="mytext">this is heading.</h2>
+<p class="para">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Soluta doloremque officia aut.</p>
+    </div>
+    <button class="btn">Click Me!</button>
+    <script src="/jqueryFile/jquery.js"></script>
+    <script>
+        $(document).ready(function()
+    {
+$('.btn').click(function()
+{
+    $('#mytext').text('Text is changed by click button');
+    $('.para').html(' paragraph <b>Text</b> is changed by click button');
+    $('.para').attr('class','myclass');
+})
+    });
+    </script>
+</body>
+</html>

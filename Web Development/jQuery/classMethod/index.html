@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class Methods</title>
+    <style>
+        .myclass{
+            color: rebeccapurple;
+        }
+    </style>
+</head>
+<body>
+    <h1>Class Method in jQuery</h1>
+    <div class="box" style="border: 2px solid black; height: 200px;
+    width: 300px;">
+<h2 id="mytext">this is heading.</h2>
+<p class="para mypara">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Soluta doloremque officia aut.</p>
+    </div>
+    <button class="btn">Click Me!</button>
+    <script src="/jqueryFile/jquery.js"></script>
+    <script>
+        $(document).ready(function()
+    {
+$('.btn').click(function()
+{
+    // we can add the one or more classes  by addclass
+    $('#mytext').addClass('myclass');
+    // we can delete classes by removeclass
+    $('.para').removeClass('mypara');
+    // if clas already apply than toggleclass delete it if not than add the class in it.
+    $('.box').toggleClass('mybox');
+
+})
+    });
+    </script>
+</body>
+</html>

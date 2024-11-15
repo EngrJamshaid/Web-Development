@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get Methods</title>
+</head>
+<body>
+  <h2>Get Methods are Text,attribute,html</h2>
+  <div id="box">
+    <h2>This is heading</h2>
+    <p>This is a paragraph.</p>
+ 
+  </div>
+    <script src="/jqueryFile/jquery.js"></script>
+<script>
+    $(document).ready(function(){
+
+let a=$('#box').html();
+console.log(a);
+
+var b=$('#box').text();
+console.log(b);
+
+var c=$('#box').attr('id');
+console.log(c);
+
+
+// value attribue also include in it
+
+
+
+
+
+    });
+</script>  
+</body>
+</html>
