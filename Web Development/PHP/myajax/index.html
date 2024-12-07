@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AJAX with jQuery</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        // Function to fetch data using jQuery AJAX
+        function fetchData() {
+            $.ajax({
+                url: "myphp.php", // PHP file to fetch data from
+                method: "GET", // HTTP method
+                dataType: "json", // Expect JSON response
+                success: function(response) {
+                    // Create an HTML table to display the books
+                    let output = '<table border="1"><tr><th>ID</th><th>Title</th><th>Author</th><th>Year</th></tr>';
+                    
+                    // Loop through the books and create table rows
+                    response.forEach(function(book) {
+                        output += `
+                            <tr>
+                                <td>${book.id}</td>
+                                <td>${book.title}</td>
+                                <td>${book.author}</td>
+                                <td>${book.year}</td>
+                            </tr>
+                        `;
+                    });
+                    
+                    output += '</table>'; // Close the table
+                    $("#result").html(output); // Update the content of the result div
+                },
+                error: function(xhr, status, error) {
+                    // Log detailed error information for debugging
+                    console.error("Error fetching data:", error);
+                    console.log(xhr.responseText);  // Log the response text
+                    $("#result").html("Failed to load data.");
+                }
+            });
+        }
+
+        // Bind fetchData to the button's click event
+        $(document).ready(function() {
+            $("#fetchButton").click(function() {
+                fetchData(); // Fetch data when button is clicked
+            });
+        });
+    </script>
+</head>
+<body>
+    <h1>AJAX with jQuery Example</h1>
+    
+    <!-- Button to trigger fetchData -->
+    <button id="fetchButton">Fetch Data</button>
+    
+    <div id="result">
+        <p>Click the button to load data...</p>
+    </div>
+</body>
+</html>

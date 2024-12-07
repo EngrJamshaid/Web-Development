@@ -1,0 +1,44 @@
+[
+    {
+        "id": "1",
+        "name": "Jamshaid",
+        "age": "21",
+        "city": "muzaffrabad"
+    },
+    {
+        "id": "2",
+        "name": "Ali",
+        "age": "25",
+        "city": "Bagh"
+    },
+    {
+        "id": "3",
+        "name": "Bilal Ahmad",
+        "age": "25",
+        "city": "bimber"
+    },
+    {
+        "id": "5",
+        "name": "Khuram",
+        "age": "35",
+        "city": "Neelme"
+    },
+    {
+        "id": "6",
+        "name": "Khuram",
+        "age": "35",
+        "city": "Neelme"
+    },
+    {
+        "id": "7",
+        "name": "qasim",
+        "age": "35",
+        "city": "Neelme"
+    },
+    {
+        "id": "8",
+        "name": "Noman",
+        "age": "25",
+        "city": "bimber"
+    }
+]

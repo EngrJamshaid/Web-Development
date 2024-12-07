@@ -1,0 +1,65 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(172, 192, 229);
+}
+
+
+h1{
+    /* border: 2px solid black; */
+    padding: 12px;
+    color: aliceblue;
+    font-family: sans-serif;
+    text-align: center;
+}
+
+#mytable{
+    /* border: 2px solid black; */
+    padding: 12px;
+    width: 100%;
+    border: none;
+}
+
+#mytable th{
+    background-color: cadetblue;
+    color: aliceblue;
+    padding: 12px;
+    font-family: sans-serif;
+
+}
+
+#mytable td{
+    /* background-color: rgb(218, 93, 118); */
+    color: aliceblue;
+    padding: 12px;
+    font-family: sans-serif;
+}
+
+tr:nth-child(even) {
+    background-color: #a53838; /* Light grey for even rows */
+}
+tr:nth-child(odd) {
+    background-color: #bd6565; /* White for odd rows */
+}
+
+
+#mybtn{
+    display: block;
+    padding: 12px;
+    font-size: 19px;
+    color: #a53838;
+    background-color: aliceblue;
+    border: none;
+    border-radius: 12px;
+    margin-left: 122px;
+}
+
+#mybtn:hover{
+color: white;
+background-color: red;
+
+}
